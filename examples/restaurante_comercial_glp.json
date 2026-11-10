@@ -1,0 +1,39 @@
+{
+  "tipo_gas": "GLP",
+  "aplicar_fator_simultaneidade": true,
+  "aparelhos": [
+    {
+      "identificador": "FOGAO_IND",
+      "descricao": "Fogão industrial 6 bocas",
+      "quantidade": 2,
+      "tipo_padrao": "fogao_6_bocas"
+    },
+    {
+      "identificador": "FORNO_IND",
+      "descricao": "Forno a gás comercial",
+      "quantidade": 1,
+      "potencia_kw": 8
+    }
+  ],
+  "trechos": [
+    {
+      "identificador": "Central-B",
+      "comprimento_real_m": 12,
+      "tubulacao_codigo": "CU_DN28",
+      "conexoes": {
+        "joelho_90": 3,
+        "te_passagem_direta": 1,
+        "valvula_esfera": 2
+      }
+    },
+    {
+      "identificador": "B-Fogoes",
+      "comprimento_real_m": 4,
+      "tubulacao_codigo": "CU_DN22",
+      "conexoes": {
+        "joelho_90": 2,
+        "valvula_esfera": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "tipo_gas": "GN",
+  "aplicar_fator_simultaneidade": true,
+  "aparelhos": [
+    {
+      "identificador": "FOGAO_1",
+      "descricao": "Fogão doméstico 4 bocas com forno",
+      "quantidade": 1,
+      "tipo_padrao": "fogao_4_bocas"
+    },
+    {
+      "identificador": "AQUECEDOR_1",
+      "descricao": "Aquecedor de passagem 20 L/min",
+      "quantidade": 1,
+      "tipo_padrao": "aquecedor_passagem_20l"
+    }
+  ],
+  "trechos": [
+    {
+      "identificador": "A-B (Principal)",
+      "comprimento_real_m": 8,
+      "tubulacao_codigo": "CU_DN22",
+      "conexoes": {
+        "joelho_90": 2,
+        "te_passagem_direta": 1,
+        "valvula_esfera": 1
+      }
+    },
+    {
+      "identificador": "B-Aquecedor",
+      "comprimento_real_m": 3,
+      "tubulacao_codigo": "CU_DN22",
+      "conexoes": {
+        "joelho_90": 3,
+        "valvula_esfera": 1
+      },
+      "vazao_m3_h": "2.56"
+    },
+    {
+      "identificador": "B-Fogao",
+      "comprimento_real_m": 5,
+      "tubulacao_codigo": "CU_DN15",
+      "conexoes": {
+        "joelho_90": 2,
+        "valvula_esfera": 1
+      },
+      "vazao_m3_h": "0.64"
+    }
+  ]
+}

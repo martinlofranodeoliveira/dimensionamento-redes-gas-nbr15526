@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <linearGradient id="gradFundo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d12"/>
+      <stop offset="100%" stop-color="#121820"/>
+    </linearGradient>
+    <linearGradient id="gradTubo" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff59d"/>
+      <stop offset="40%" stop-color="#f1e05a"/>
+      <stop offset="100%" stop-color="#b89e14"/>
+    </linearGradient>
+    <filter id="sombraCard" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Fundo Principal -->
+  <rect width="1440" height="900" fill="url(#gradFundo)"/>
+
+  <!-- Cabeçalho -->
+  <rect x="40" y="30" width="1360" height="90" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1" filter="url(#sombraCard)"/>
+  <text x="70" y="65" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#58a6ff" letter-spacing="1.5">LOFRANO TECNOLOGIA · INSTALAÇÕES PREDIAIS DE GÁS</text>
+  <text x="70" y="96" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f0f6fc">DIMENSIONAMENTO DE REDES INTERNAS DE GASES COMBUSTÍVEIS · ABNT NBR 15526</text>
+  <rect x="1220" y="50" width="150" height="48" rx="8" fill="#3fb950" fill-opacity="0.15" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="1295" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#3fb950" text-anchor="middle">APROVADO</text>
+
+  <!-- Painel Esquerdo: Esquema Isométrico da Rede de Gás -->
+  <rect x="40" y="140" width="840" height="470" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1" filter="url(#sombraCard)"/>
+  <text x="70" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#f0f6fc">ESQUEMA ISOMÉTRICO DA REDE DE DISTRIBUIÇÃO</text>
+  <text x="70" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e">Gás: Gás Natural (GN) · Fórmula de Pole (Baixa Pressão) · Tubos de Cobre/Aço</text>
+
+  <!-- Desenho Isométrico Estilizado da Rede de Gás -->
+  <g transform="translate(80, 220)">
+    <!-- Medidor / Regulador (Ponto Inicial A) -->
+    <rect x="20" y="150" width="60" height="80" rx="6" fill="#21262d" stroke="#58a6ff" stroke-width="2"/>
+    <circle cx="50" cy="180" r="16" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <line x1="50" y1="180" x2="58" y2="172" stroke="#58a6ff" stroke-width="2"/>
+    <text x="50" y="215" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#f0f6fc" text-anchor="middle">MEDIDOR</text>
+    <text x="50" y="140" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#58a6ff" text-anchor="middle">Ponto A</text>
+
+    <!-- Tubulação Principal: A até Derivação B -->
+    <line x1="80" y1="190" x2="280" y2="190" stroke="url(#gradTubo)" stroke-width="10" stroke-linecap="round"/>
+    <!-- Cotas do Trecho A-B -->
+    <text x="180" y="175" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#f1e05a" text-anchor="middle">Trecho Principal (A-B)</text>
+    <text x="180" y="215" font-family="system-ui, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Q_simult = 301/94 m³/h</text>
+
+    <!-- Derivação B (Tê de gás) -->
+    <circle cx="280" cy="190" r="8" fill="#b89e14" stroke="#fff" stroke-width="2"/>
+    <text x="280" y="215" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#58a6ff" text-anchor="middle">B</text>
+
+    <!-- Ramal 1: B sobe até Aquecedor de Água -->
+    <line x1="280" y1="190" x2="280" y2="70" stroke="url(#gradTubo)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="280" y1="70" x2="480" y2="70" stroke="url(#gradTubo)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Bloco Aquecedor de Água -->
+    <rect x="480" y="30" width="80" height="90" rx="6" fill="#21262d" stroke="#d29922" stroke-width="2"/>
+    <circle cx="520" cy="65" r="14" fill="#30363d"/>
+    <path d="M 520 55 Q 528 65 520 75 Q 512 65 520 55 Z" fill="#ff7b72"/>
+    <text x="520" y="105" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#f0f6fc" text-anchor="middle">AQUECEDOR</text>
+    <text x="380" y="60" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#f1e05a" text-anchor="middle">Ramal Aquecedor</text>
+
+    <!-- Ramal 2: B segue reto até Fogão / Cooktop -->
+    <line x1="280" y1="190" x2="480" y2="190" stroke="url(#gradTubo)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Bloco Fogão / Cooktop -->
+    <rect x="480" y="160" width="90" height="70" rx="6" fill="#21262d" stroke="#58a6ff" stroke-width="2"/>
+    <circle cx="500" cy="185" r="7" fill="#30363d" stroke="#ff7b72" stroke-width="1.5"/>
+    <circle cx="525" cy="185" r="7" fill="#30363d" stroke="#ff7b72" stroke-width="1.5"/>
+    <circle cx="550" cy="185" r="7" fill="#30363d" stroke="#ff7b72" stroke-width="1.5"/>
+    <text x="525" y="215" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#f0f6fc" text-anchor="middle">FOGÃO/FORNO</text>
+    <text x="380" y="180" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#f1e05a" text-anchor="middle">Ramal Fogão</text>
+  </g>
+
+  <!-- Painel Direito: Parâmetros Físicos e Demanda -->
+  <rect x="900" y="140" width="500" height="470" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1" filter="url(#sombraCard)"/>
+  <text x="930" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#f0f6fc">PARÂMETROS DE CÁLCULO E DEMANDA</text>
+
+  <!-- Card 1: Gás Combustível -->
+  <g transform="translate(930, 200)">
+    <rect x="0" y="0" width="440" height="90" rx="8" fill="#1c2128" stroke="#30363d" stroke-width="1"/>
+    <text x="16" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#58a6ff">PROPRIEDADES DO GÁS (GN)</text>
+    <text x="16" y="46" font-family="system-ui, sans-serif" font-size="12" fill="#f0f6fc">Gás: Gás Natural · Densidade Relativa d_r = 0.6</text>
+    <text x="16" y="66" font-family="system-ui, sans-serif" font-size="12" fill="#f0f6fc">PCS = 9400 kcal/m³ · Pressão Nominal = 200 mmca</text>
+    <text x="16" y="84" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#d29922">Perda de Carga Máxima Permitida = 25 mmca</text>
+  </g>
+
+  <!-- Card 2: Demanda Instalada e Simultaneidade -->
+  <g transform="translate(930, 305)">
+    <rect x="0" y="0" width="440" height="95" rx="8" fill="#1c2128" stroke="#30363d" stroke-width="1"/>
+    <text x="16" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#58a6ff">DEMANDA TÉRMICA E SIMULTANEIDADE</text>
+    <text x="16" y="46" font-family="system-ui, sans-serif" font-size="12" fill="#f0f6fc">Potência Total Instalada: 35 kW</text>
+    <text x="16" y="66" font-family="system-ui, sans-serif" font-size="12" fill="#f0f6fc">Fator de Simultaneidade (F): 1</text>
+    <text x="16" y="86" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#3fb950">Vazão Simultânea Adotada: 301/94 m³/h</text>
+  </g>
+
+  <!-- Card 3: Verificação de Perda e Velocidade -->
+  <g transform="translate(930, 415)">
+    <rect x="0" y="0" width="440" height="175" rx="8" fill="#1c2128" stroke="#30363d" stroke-width="1"/>
+    <text x="16" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#58a6ff">BALANÇO HIDRÁULICO E CONFORMIDADE</text>
+    <text x="16" y="48" font-family="system-ui, sans-serif" font-size="12" fill="#f0f6fc">Perda de Carga Acumulada: 111580859129621638499789/162497698010817338812500 mmca</text>
+    <text x="16" y="68" font-family="system-ui, sans-serif" font-size="12" fill="#f0f6fc">Perda de Carga Limite: 25 mmca</text>
+    <text x="16" y="88" font-family="system-ui, sans-serif" font-size="12" fill="#f0f6fc">Taxa de Trabalho da Perda: 2%</text>
+    <text x="16" y="108" font-family="system-ui, sans-serif" font-size="12" fill="#f0f6fc">Velocidade Máxima do Gás: 850325000/294353433 m/s (Limite: 20 m/s)</text>
+    <text x="16" y="132" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#3fb950">Veredito: APROVADO</text>
+    <text x="16" y="154" font-family="system-ui, sans-serif" font-size="10" fill="#8b949e">Cálculo conforme ABNT NBR 15526:2016 e Fórmula de Pole</text>
+  </g>
+
+  <!-- Painel Inferior: Quadro Analítico de Trechos -->
+  <rect x="40" y="630" width="1360" height="235" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1" filter="url(#sombraCard)"/>
+  <text x="70" y="665" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#f0f6fc">DIMENSIONAMENTO POR TRECHO (FÓRMULA DE POLE)</text>
+  <g transform="translate(70, 690)">
+    <text x="0" y="14" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#f0f6fc">A-B (Principal) (CU_DN22, Dint=19.8mm)</text>
+    <text x="360" y="14" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Leq=9.9m · Q=301/94m³/h · ΔH=125833463875/282927544812mmca</text>
+    <!-- Trilho da barra -->
+    <rect x="740" y="3" width="260" height="14" rx="4" fill="#21262d"/>
+    <!-- Preenchimento da barra -->
+    <rect x="740" y="3" width="2" height="14" rx="4" fill="#f1e05a"/>
+    <text x="1020" y="14" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#f1e05a">1%</text>
+    <text x="1080" y="14" font-family="system-ui, sans-serif" font-size="12" fill="#f0f6fc">Vel: 850325000/294353433 m/s</text>
+    <text x="1220" y="14" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#3fb950">✓ OK</text>
+  </g>
+  <g transform="translate(70, 717)">
+    <text x="0" y="14" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#f0f6fc">B-Aquecedor (CU_DN22, Dint=19.8mm)</text>
+    <text x="360" y="14" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Leq=5.3m · Q=2.56m³/h · ΔH=2412064768/15849834165mmca</text>
+    <!-- Trilho da barra -->
+    <rect x="740" y="3" width="260" height="14" rx="4" fill="#21262d"/>
+    <!-- Preenchimento da barra -->
+    <rect x="740" y="3" width="0" height="14" rx="4" fill="#f1e05a"/>
+    <text x="1020" y="14" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#f1e05a">0%</text>
+    <text x="1080" y="14" font-family="system-ui, sans-serif" font-size="12" fill="#f0f6fc">Vel: 14464000/6262839 m/s</text>
+    <text x="1220" y="14" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#3fb950">✓ OK</text>
+  </g>
+  <g transform="translate(70, 744)">
+    <text x="0" y="14" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#f0f6fc">B-Fogao (CU_DN15, Dint=13mm)</text>
+    <text x="360" y="14" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Leq=6.1m · Q=0.64m³/h · ΔH=520528128/5801453125mmca</text>
+    <!-- Trilho da barra -->
+    <rect x="740" y="3" width="260" height="14" rx="4" fill="#21262d"/>
+    <!-- Preenchimento da barra -->
+    <rect x="740" y="3" width="0" height="14" rx="4" fill="#f1e05a"/>
+    <text x="1020" y="14" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#f1e05a">0%</text>
+    <text x="1080" y="14" font-family="system-ui, sans-serif" font-size="12" fill="#f0f6fc">Vel: 144640/107991 m/s</text>
+    <text x="1220" y="14" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#3fb950">✓ OK</text>
+  </g>
+</svg>

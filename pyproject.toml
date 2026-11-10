@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dimensionamento-redes-gas-nbr15526"
+version = "1.0.0"
+description = "Dimensionamento analítico de redes de distribuição interna de gases combustíveis (GN e GLP) segundo a ABNT NBR 15526 em frações exatas e Python puro."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Lofrano Tecnologia", email = "contato@lofranotecnologia.com.br" }
+]
+keywords = [
+    "engenharia-civil",
+    "instalacoes-prediais",
+    "redes-gas",
+    "abnt-nbr-15526",
+    "gas-natural",
+    "glp",
+    "fracoes-exatas",
+    "zero-dependencias"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Typing :: Typed"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/martinlofranodeoliveira/dimensionamento-redes-gas-nbr15526"
+Repository = "https://github.com/martinlofranodeoliveira/dimensionamento-redes-gas-nbr15526.git"
+Documentation = "https://github.com/martinlofranodeoliveira/dimensionamento-redes-gas-nbr15526#readme"
+
+[project.scripts]
+redes-gas = "redes_gas_nbr15526.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]

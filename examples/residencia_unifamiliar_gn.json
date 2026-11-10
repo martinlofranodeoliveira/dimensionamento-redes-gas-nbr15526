@@ -1,0 +1,39 @@
+{
+  "tipo_gas": "GN",
+  "aplicar_fator_simultaneidade": true,
+  "aparelhos": [
+    {
+      "identificador": "COOKTOP",
+      "descricao": "Mesa de cocção 5 bocas",
+      "quantidade": 1,
+      "tipo_padrao": "cooktop_5_bocas"
+    },
+    {
+      "identificador": "AQUECEDOR",
+      "descricao": "Aquecedor de passagem 15 L/min",
+      "quantidade": 1,
+      "tipo_padrao": "aquecedor_passagem_15l"
+    }
+  ],
+  "trechos": [
+    {
+      "identificador": "Abrigo-Casa",
+      "comprimento_real_m": 15,
+      "tubulacao_codigo": "CU_DN22",
+      "conexoes": {
+        "joelho_90": 4,
+        "valvula_esfera": 1
+      }
+    },
+    {
+      "identificador": "Derivacao-Aquecedor",
+      "comprimento_real_m": 2,
+      "tubulacao_codigo": "CU_DN15",
+      "conexoes": {
+        "joelho_90": 2,
+        "valvula_esfera": 1
+      },
+      "vazao_m3_h": "1.92"
+    }
+  ]
+}
